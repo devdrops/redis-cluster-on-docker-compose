@@ -1,15 +1,4 @@
 # Redis cluster, on Docker Compose
 
-<!-- Description -->
-
-## How to Run?
-
-
-## How to Run Tests?
-
-
-## How to Stop?
-
-
-
+Reference: https://medium.com/@jielim36/basic-docker-compose-and-build-a-redis-cluster-with-docker-compose-0313f063afb6
 
