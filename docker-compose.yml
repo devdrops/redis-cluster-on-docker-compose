@@ -10,7 +10,7 @@ services:
       - 16371:16379
     networks:
       redis_cluster_network:
-        ipv4_address: 172.38.0.11
+        ipv4_address: 172.38.0.10
   redis-1:
     image: redis
     command: ["redis-server", "/etc/redis/redis.conf"]
@@ -22,7 +22,7 @@ services:
       - 16372:16379
     networks:
       redis_cluster_network:
-        ipv4_address: 172.38.0.12
+        ipv4_address: 172.38.0.11
   redis-2:
     image: redis
     command: ["redis-server", "/etc/redis/redis.conf"]
@@ -34,7 +34,7 @@ services:
       - 16373:16379
     networks:
       redis_cluster_network:
-        ipv4_address: 172.38.0.13
+        ipv4_address: 172.38.0.12
   redis-3:
     image: redis
     command: ["redis-server", "/etc/redis/redis.conf"]
@@ -46,7 +46,7 @@ services:
       - 16374:16379
     networks:
       redis_cluster_network:
-        ipv4_address: 172.38.0.14
+        ipv4_address: 172.38.0.13
   redis-4:
     image: redis
     command: ["redis-server", "/etc/redis/redis.conf"]
@@ -58,7 +58,7 @@ services:
       - 16375:16379
     networks:
       redis_cluster_network:
-        ipv4_address: 172.38.0.15
+        ipv4_address: 172.38.0.14
   redis-5:
     image: redis
     command: ["redis-server", "/etc/redis/redis.conf"]
@@ -70,7 +70,7 @@ services:
       - 16376:16379
     networks:
       redis_cluster_network:
-        ipv4_address: 172.38.0.16
+        ipv4_address: 172.38.0.15
 
 networks:
   redis_cluster_network:
