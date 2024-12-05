@@ -3,15 +3,11 @@
 # ----------------------------------------------------------------------------------------------------------------------
 SHELL := '/bin/bash'
 
-run-bitnami-cluster:
-	docker rm -f redis-bitnami-cluster
-	docker run -ti --name redis-bitnami-cluster \
-		-v $(PWD)/bitnami:/bitnami \
-		-e ALLOW_EMPTY_PASSWORD=yes \
-		-e REDIS_NODES="" \
-		bitnami/redis-cluster:latest
-
 create-conf:
 	$(shell ./create-redis-conf.sh)
 
-run-cluster:
+run-redis:
+	docker compose up
+
+create-cluster:
+	docker compose exec redis-0 bash
